@@ -52,16 +52,20 @@ hr {
   position: relative;
 }
 
+.earth {
+  color: #dd0000;
+}
+
 .header-title::before {
-  content: " ";
+  content: "";
   position: absolute;
   left: 0;
   height: 100%;
   width: 100%;
   border-left: 2px solid white;
-  animation: typing 7s steps(100) infinite;
+  animation: typing 7s steps(150) infinite;
   background: #161616;
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
 }
 @keyframes typing {
   0% {
@@ -70,8 +74,7 @@ hr {
 
   100% {
     left: 100%;
-    /* opacity: 0; */
-    background-color: #161616;
+    opacity: 0;
   }
 }
 
@@ -464,9 +467,32 @@ hr {
     width: 228px;
   }
 
+  .header-title::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 0px solid white;
+    animation: typing 7s steps(100) infinite;
+    background: #161616;
+    animation-fill-mode: forwards;
+  }
+  @keyframes typing {
+    0% {
+      top: 0%;
+    }
+
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+
   .header-description {
     width: 280px;
     font-size: 0.7rem;
+    z-index: 1;
   }
 
   .header-button {
