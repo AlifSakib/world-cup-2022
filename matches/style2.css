@@ -12,7 +12,7 @@
 /* ?Common / Utilities */
 
 body {
-  /* ?font-family: "Montserrat", sans-serif; */
+  /* !font-family: "Montserrat", sans-serif; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -49,33 +49,6 @@ hr {
 .header-title {
   font-size: 1.8rem;
   width: 531px;
-  position: relative;
-}
-
-.earth {
-  color: #dd0000;
-}
-
-.header-title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-left: 2px solid white;
-  animation: shadow 7s steps(150) infinite;
-  background: #161616;
-  /* animation-fill-mode: forwards; */
-}
-@keyframes shadow {
-  0% {
-    left: 0%;
-  }
-
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
 }
 
 .header-description {
@@ -102,16 +75,12 @@ hr {
   color: white;
 }
 
-.right-section {
-  z-index: 1;
-}
-
 .right-section img {
   margin-top: 16px;
   height: 640px;
 }
 
-/* ?Main Section */
+/* !Bottom-Section */
 
 .main {
   display: flex;
@@ -159,72 +128,46 @@ hr {
   color: #161616;
 }
 
-#blog-menu {
+.upcoming-matches {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+
+.upcoming-match {
+  width: 100%;
+  height: 242px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#upcoming-match {
   background-color: #dd0000;
 }
 
-#blog-menu a {
+#upcoming-match a {
   color: white;
 }
 
-.matches {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
-}
-
-.match {
-  width: 100%;
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
-}
-
-.match-photo img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.match-description {
-  padding: 20px;
-}
-
-.transfer-button {
-  width: 100px;
-  height: 32px;
-  border: 1px solid black;
+.flags {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  column-gap: 10px;
 }
 
-.transfer-button a {
-  text-decoration: none;
-  font-weight: 500;
-  color: black;
+.teams {
+  margin-top: 20px;
 }
 
-.description {
-  margin: 20px 0;
-}
-
-.match-logos {
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
-  font-size: 16px;
-}
-
-.time-logo {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-}
-
-.comment-logo {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
+.time {
+  margin-top: 20px;
+  color: #4d4d4d;
 }
 
 .view-all {
@@ -237,7 +180,6 @@ hr {
   margin-top: 30px;
   border-radius: 5px;
 }
-
 .view-all a {
   text-decoration: none;
   color: white;
@@ -290,7 +232,6 @@ hr {
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   /* ?Top Section Styles */
-
   .header {
     display: flex;
     align-items: center;
@@ -349,8 +290,6 @@ hr {
     margin-left: 15px;
   }
 
-  /* ?Main Section */
-
   .main {
     margin-top: 30px;
     display: flex;
@@ -364,7 +303,7 @@ hr {
     flex-direction: column;
   }
 
-  .matches {
+  .upcoming-matches {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
@@ -384,17 +323,13 @@ hr {
     margin: 0;
   }
 
-  .match-9 {
-    display: none;
-  }
-
   .view-all {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  /* ?Footer Style */
+  /* * ?Footer Style */
 
   .footer-menu {
     display: grid;
@@ -432,8 +367,6 @@ hr {
   }
 }
 
-/* ?For Mobile Devices */
-
 @media screen and (max-width: 576px) {
   /* ?Top Section Styles */
   .header {
@@ -443,7 +376,7 @@ hr {
 
   .header-container {
     width: 335px;
-    height: 596px;
+    height: 615px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,32 +401,9 @@ hr {
     width: 228px;
   }
 
-  .header-title::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border: 0px solid white;
-    animation: shadow 7s steps(100) infinite;
-    background: #161616;
-    animation-fill-mode: forwards;
-  }
-  @keyframes shadow {
-    0% {
-      top: 0%;
-    }
-
-    100% {
-      top: 100%;
-      opacity: 0;
-    }
-  }
-
   .header-description {
     width: 280px;
     font-size: 0.7rem;
-    z-index: 1;
   }
 
   .header-button {
@@ -553,7 +463,7 @@ hr {
     font-weight: 500;
   }
 
-  .matches {
+  .upcoming-matches {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
