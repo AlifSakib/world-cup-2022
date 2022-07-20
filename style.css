@@ -411,7 +411,7 @@ hr {
 
   .header-container {
     width: 335px;
-    height: 640px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -454,8 +454,13 @@ hr {
     color: white;
   }
 
+  .right-section {
+    display: flex;
+    justify-content: center;
+  }
+
   .right-section img {
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
 
@@ -493,6 +498,13 @@ hr {
     font-weight: 500;
   }
 
+  .matches {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    margin-top: 30px;
+  }
+
   #upcoming-match {
     width: 210px;
     height: 48px;
@@ -510,13 +522,6 @@ hr {
     font-size: 16px;
     line-height: 24px;
     color: #b9b9b9;
-    margin-top: 30px;
-  }
-
-  .matches {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 25px;
     margin-top: 30px;
   }
 }

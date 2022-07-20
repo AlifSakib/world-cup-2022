@@ -41,18 +41,19 @@ hr {
 
 .left-Section {
   color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .header-title {
-  font-size: 30px;
+  font-size: 1.8rem;
   width: 531px;
-  height: 240px;
 }
 
 .header-description {
   width: 506px;
   height: 78px;
-  margin-top: 30px;
 }
 
 .header-button {
@@ -64,8 +65,8 @@ hr {
   column-gap: 8px;
   align-items: center;
   padding: 15px 0;
-  font-size: 15px;
-  margin-top: 30px;
+  font-size: 1rem;
+  /* margin-top: 30px; */
   border-radius: 5px;
 }
 
@@ -103,6 +104,7 @@ hr {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
 }
@@ -110,8 +112,9 @@ hr {
 .navigation-menu {
   width: 252px;
   height: 64px;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+
   background-color: white;
   align-items: center;
   font-size: 20px;
@@ -126,13 +129,14 @@ hr {
 }
 
 .upcoming-matches {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px;
 }
 
 .upcoming-match {
-  width: 312px;
+  width: 100%;
   height: 242px;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
@@ -165,6 +169,23 @@ hr {
   margin-top: 20px;
   color: #4d4d4d;
 }
+
+.view-all {
+  display: none;
+  width: 150px;
+  height: 56px;
+  background-color: #dd0000;
+  padding: 15px 0;
+  font-size: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.view-all a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ?Footer Style */
 
 .footer {
   margin-top: 50px;
@@ -205,4 +226,267 @@ hr {
   padding: 8px;
   color: #161616;
   border-radius: 50%;
+}
+
+/* ?For Tablet Devices */
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  /* ?Top Section Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-container {
+    width: 735px;
+    height: 398px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+
+  .left-Section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .header-title {
+    font-size: 1rem;
+    width: 298px;
+  }
+
+  .header-description {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+
+  .header-button {
+    width: 140px;
+    height: 48px;
+    justify-content: center;
+    display: flex;
+    background-color: #dd0000;
+    column-gap: 8px;
+    align-items: center;
+    padding: 25px 0;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .header-button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .right-section img {
+    margin-top: 16px;
+    height: 388px;
+    margin-left: 15px;
+  }
+
+  .main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-and-matches {
+    width: 735px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upcoming-matches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  .navigation-menus {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 30px 0;
+    column-gap: 30px;
+  }
+  .navigation-menu {
+    border: 1px solid #b9b9b9;
+    margin: 0;
+  }
+
+  .view-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* * ?Footer Style */
+
+  .footer-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #b9b9b9;
+    margin-top: 30px;
+    text-align: center;
+    grid-template-areas:
+      "c t p s"
+      ". a l .";
+  }
+  .Contact {
+    grid-area: c;
+  }
+  .Terms {
+    grid-area: t;
+  }
+  .Privacy {
+    grid-area: p;
+  }
+
+  .Settings {
+    grid-area: s;
+  }
+
+  .App {
+    grid-area: a;
+  }
+
+  .Live {
+    grid-area: l;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ?Top Section Styles */
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-container {
+    width: 335px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    background-color: #161616;
+    border-radius: 30px;
+  }
+
+  .left-Section {
+    display: flex;
+    row-gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+  }
+
+  .header-title {
+    font-size: 12px;
+    width: 228px;
+  }
+
+  .header-description {
+    width: 280px;
+    font-size: 0.7rem;
+  }
+
+  .header-button {
+    width: 160px;
+    height: 40px;
+    background-color: #dd0000;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  .header-button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .right-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-section img {
+    width: 90%;
+    height: 100%;
+  }
+
+  /* ?Main Section */
+
+  .main {
+    margin-top: 40px;
+  }
+
+  .nav-and-matches {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation-menus {
+    width: 210px;
+    height: 176px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation-menu {
+    width: 160px;
+    height: 48px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  .upcoming-matches {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    margin-top: 30px;
+  }
+
+  #upcoming-match {
+    width: 210px;
+    height: 48px;
+  }
+
+  /* ?Footer Style */
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #b9b9b9;
+    margin-top: 30px;
+  }
 }
