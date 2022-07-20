@@ -304,6 +304,15 @@ hr {
   border-radius: 50%;
 }
 
+.copy-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+}
+
 /* ?For Tablet Devices */
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
