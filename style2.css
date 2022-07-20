@@ -288,6 +288,7 @@ hr {
     margin-top: 16px;
     height: 388px;
     margin-left: 15px;
+    /* display: block; */
   }
 
   .main {
@@ -425,6 +426,7 @@ hr {
   }
 
   .right-section img {
+    display: block;
     width: 90%;
     height: 100%;
   }

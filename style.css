@@ -517,6 +517,7 @@ hr {
   .right-section img {
     width: 90%;
     height: 100%;
+    display: block;
   }
 
   /* ?Main Section */
