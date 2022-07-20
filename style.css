@@ -59,11 +59,10 @@ hr {
   height: 100%;
   width: 100%;
   border-left: 2px solid white;
-  animation: typing 15s steps(100);
+  animation: typing 7s steps(100) infinite;
   background: #161616;
   animation-fill-mode: forwards;
 }
-
 @keyframes typing {
   0% {
     left: 0%;
@@ -71,7 +70,8 @@ hr {
 
   100% {
     left: 100%;
-    border-left: 2px solid #161616;
+    /* opacity: 0; */
+    background-color: #161616;
   }
 }
 
