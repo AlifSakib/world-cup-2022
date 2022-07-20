@@ -155,10 +155,10 @@ hr {
 }
 
 .flags {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: center;
-  column-gap: 10px;
+  justify-items: center;
 }
 
 .teams {
@@ -449,7 +449,6 @@ hr {
 
   .navigation-menus {
     width: 210px;
-    /* height: 176px; */
     background-color: white;
     display: flex;
     flex-direction: column;
