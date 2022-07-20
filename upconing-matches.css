@@ -377,7 +377,7 @@ hr {
 
   .header-container {
     width: 335px;
-    height: 597px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,14 +421,16 @@ hr {
   }
 
   .right-section {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
   .right-section img {
+    height: 400px;
+    width: 300px;
     display: block;
-    width: 90%;
-    height: 100%;
   }
 
   /* ?Main Section */
@@ -447,7 +449,7 @@ hr {
 
   .navigation-menus {
     width: 210px;
-    height: 176px;
+    /* height: 176px; */
     background-color: white;
     display: flex;
     flex-direction: column;
