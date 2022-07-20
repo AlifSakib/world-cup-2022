@@ -12,7 +12,7 @@
 /* ?Common / Utilities */
 
 body {
-  /* !font-family: "Montserrat", sans-serif; */
+  /* ?font-family: "Montserrat", sans-serif; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -41,18 +41,19 @@ hr {
 
 .left-Section {
   color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .header-title {
-  font-size: 30px;
+  font-size: 1.8rem;
   width: 531px;
-  height: 240px;
 }
 
 .header-description {
   width: 506px;
   height: 78px;
-  margin-top: 30px;
 }
 
 .header-button {
@@ -64,8 +65,8 @@ hr {
   column-gap: 8px;
   align-items: center;
   padding: 15px 0;
-  font-size: 15px;
-  margin-top: 30px;
+  font-size: 1rem;
+  /* margin-top: 30px; */
   border-radius: 5px;
 }
 
@@ -79,7 +80,7 @@ hr {
   height: 640px;
 }
 
-/* !Main Section */
+/* ?Main Section */
 
 .main {
   display: flex;
@@ -251,7 +252,7 @@ hr {
   border-radius: 50%;
 }
 
-/* !For Tablet Devices */
+/* ?For Tablet Devices */
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .header {
@@ -273,20 +274,19 @@ hr {
 
   .left-Section {
     color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
   }
 
   .header-title {
-    font-size: 20px;
+    font-size: 1rem;
     width: 298px;
-    height: 150px;
   }
 
   .header-description {
     width: 300px;
-    height: 48px;
-    margin-top: 30px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.8rem;
   }
 
   .header-button {
@@ -299,7 +299,6 @@ hr {
     align-items: center;
     padding: 25px 0;
     font-size: 15px;
-    margin-top: 30px;
     border-radius: 5px;
   }
 
@@ -392,7 +391,8 @@ hr {
   }
 }
 
-/* !For Mobile Devices */
+/* ?For Mobile Devices */
+
 @media screen and (max-width: 576px) {
   .header {
     display: flex;
@@ -400,49 +400,42 @@ hr {
   }
 
   .header-container {
-    width: 334px;
-    height: 500px;
+    width: 335px;
+    height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    row-gap: 15px;
     background-color: #161616;
-    margin-top: 28px;
     border-radius: 30px;
   }
 
   .left-Section {
-    margin-top: 20px;
-    color: white;
-    width: 258px;
     display: flex;
-    flex-direction: column;
+    row-gap: 5px;
     align-items: center;
+    flex-direction: column;
     text-align: center;
+    color: white;
+    padding: 15px 0;
   }
 
   .header-title {
     font-size: 12px;
     width: 228px;
-    height: 60px;
   }
 
   .header-description {
-    width: 258px;
-    height: 48px;
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
+    width: 280px;
+    font-size: 0.7rem;
   }
 
   .header-button {
     width: 160px;
     height: 40px;
-    justify-content: center;
-    display: flex;
     background-color: #dd0000;
-    align-items: center;
-    font-size: 15px;
-    margin: 0;
+    font-size: 1rem;
     border-radius: 5px;
   }
 
@@ -452,13 +445,8 @@ hr {
   }
 
   .right-section img {
-    margin-top: 20px;
-    width: 230px;
-    height: 288px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 50px;
+    width: 100%;
+    height: 100%;
   }
 
   .main {
