@@ -235,12 +235,14 @@ hr {
   display: flex;
   align-items: center;
   column-gap: 12px;
+  color: #1363df;
 }
 
 .comment-logo {
   display: flex;
   align-items: center;
   column-gap: 12px;
+  color: #f66b0e;
 }
 
 .view-all {
