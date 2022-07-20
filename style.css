@@ -89,12 +89,20 @@ hr {
   justify-content: center;
   display: flex;
   background-color: #dd0000;
+  box-shadow: 0 0 10px #dd0000, 0 0 10px #dd0000, 0 0 80px #dd0000;
   column-gap: 8px;
   align-items: center;
   padding: 15px 0;
   font-size: 1rem;
-  /* margin-top: 30px; */
   border-radius: 5px;
+  font-weight: 500;
+  color: white;
+}
+
+.header-button:hover {
+  color: black;
+  background: #3ccf4e;
+  box-shadow: 0 0 10px #3ccf4e, 0 0 10px #3ccf4e, 0 0 80px #3ccf4e;
 }
 
 .header-button a {
@@ -145,7 +153,6 @@ hr {
   height: 64px;
   display: flex;
   justify-content: center;
-
   background-color: white;
   align-items: center;
   font-size: 20px;
@@ -177,11 +184,18 @@ hr {
   width: 100%;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.match:hover {
+  transform: scale(1.1);
 }
 
 .match-photo img {
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .match-description {
@@ -191,7 +205,8 @@ hr {
 .transfer-button {
   width: 100px;
   height: 32px;
-  border: 1px solid black;
+  /* border: 1px solid red; */
+  background-color: #dd0000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,7 +216,8 @@ hr {
 .transfer-button a {
   text-decoration: none;
   font-weight: 500;
-  color: black;
+  /* color: black; */
+  color: white;
 }
 
 .description {
@@ -280,9 +296,9 @@ hr {
 
 .fa-brands {
   font-size: 20px;
-  background-color: white;
-  padding: 8px;
-  color: #161616;
+  background-color: #003865;
+  padding: 10px;
+  color: white;
   border-radius: 50%;
 }
 
